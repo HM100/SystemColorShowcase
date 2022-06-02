@@ -1,0 +1,221 @@
+<style>
+
+div {
+
+	display:flex;
+	gap:5px;
+	flex-wrap:wrap;
+}
+
+body {
+	background-color:lightgreen;
+	color:black;
+	font-family: sans-serif;
+}
+
+* {
+	forced-color-adjust:none;
+}
+
+block {
+	width:54px;
+	height:54px;
+	box-sizing:border-box;
+	border-radius:5px;
+	border: 2px solid transparent;
+	display:flex;
+	font-size: 50px;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
+	position:relative;
+	background-color:red;
+	color:white;
+}
+
+block block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 3px;
+	width: 50px;
+	height: 50px;
+	pointer-events:none;
+	background:transparent;
+}
+
+
+</style>
+<section style="color-scheme:light;">
+	<h1>Light Mode</h1>
+		<h2>Non-Deprecated Colors</h2>
+
+	<div>
+
+		<block style="background:Canvas;" title="Canvas"></block>
+		<block style="background:CanvasText;" title="CanvasText"></block>
+		<block style="background:LinkText;" title="LinkText"></block>
+		<block style="background:VisitedText;" title="VisitedText"></block>
+		<block style="background:ActiveText;" title="ActiveText"></block>
+		<block style="background:ButtonFace;" title="ButtonFace"></block>
+		<block style="background:ButtonText;" title="ButtonText"></block>
+		<block style="background:ButtonBorder;" title="ButtonBorder"></block>
+		<block style="background:Field;" title="Field"></block>
+		<block style="background:FieldText;" title="FieldText"></block>
+		<block style="background:Highlight;" title="Highlight"></block>
+		<block style="background:HighlightText;" title="HighlightText"></block>
+		<block style="background:SelectedItem;" title="SelectedItem"></block>
+		<block style="background:SelectedItemText;" title="SelectedItemText"></block>
+		<block style="background:Mark;" title="Mark"></block>
+		<block style="background:MarkText;" title="MarkText"></block>
+		<block style="background:GrayText;" title="GrayText"></block>
+	</div>
+
+
+		<h2>Non-Deprecated Colors Combos</h2>
+
+	<div>
+		<block style="background:Canvas; border-color:Canvas; color:CanvasText" title="Canvas">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:LinkText" title="Link">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:VisitedText" title="Visited Link">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:ActiveText" title="Active Link">A</block>
+		<block style="background:ButtonFace; border-color:ButtonBorder; color:ButtonText" title="2D Button">A</block>
+		<block style="background:Field; border-color:Field; color:FieldText" title="Textfield">A</block>
+		<block style="background:Highlight; border-color:Highlight; color:HighlightText" title="Highlight">A</block>
+		<block style="background:Highlight; border-color:Highlight; color:GrayText" title="Disabled Highlight">A</block>
+		<block style="background:SelectedItem; border-color:SelectedItem; color:SelectedItemText" title="Selected Item">A</block>
+		<block style="background:Mark; border-color:Mark; color:MarkText" title="Mark">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:GrayText" title="Gray Text">A</block>
+	</div>
+
+
+		<h2>Deprecated Colors</h2>
+
+	<div>
+
+		<block style="background:ActiveBorder" title="ActiveBorder"></block>
+		<block style="background:ActiveCaption" title="ActiveCaption"></block>
+		<block style="background:AppWorkspace" title="AppWorkspace"></block>
+		<block style="background:Background" title="Background"></block>
+		<block style="background:ButtonHighlight" title="ButtonHighlight"></block>
+		<block style="background:ButtonShadow" title="ButtonShadow"></block>
+		<block style="background:CaptionText" title="CaptionText"></block>
+		<block style="background:InactiveBorder" title="InactiveBorder"></block>
+		<block style="background:InactiveCaption" title="InactiveCaption"></block>
+		<block style="background:InactiveCaptionText" title="InactiveCaptionText"></block>
+		<block style="background:InfoBackground" title="InfoBackground"></block>
+		<block style="background:InfoText" title="InfoText"></block>
+		<block style="background:Menu" title="Menu"></block>
+		<block style="background:MenuText" title="MenuText"></block>
+		<block style="background:Scrollbar" title="Scrollbar"></block>
+		<block style="background:ThreeDDarkShadow" title="ThreeDDarkShadow"></block>
+		<block style="background:ThreeDFace" title="ThreeDFace"></block>
+		<block style="background:ThreeDHighlight" title="ThreeDHighlight"></block>
+		<block style="background:ThreeDLightShadow" title="ThreeDLightShadow"></block>
+		<block style="background:ThreeDShadow" title="ThreeDShadow"></block>
+		<block style="background:Window" title="Window"></block>
+		<block style="background:WindowFrame" title="WindowFrame"></block>
+		<block style="background:WindowText" title="WindowText"></block>
+	</div>
+
+
+		<h2>Deprecated Colors Combos</h2>
+
+	<div>
+
+		<block style="background:ActiveCaption; border-color:ActiveBorder; color:CaptionText" title="Caption">A</block>
+		<block style="background:ButtonFace; border-color:ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight; color:ButtonText;" title="1-layered 3D Button">A</block>
+		<block style="background:InactiveCaption; border-color:InactiveCaption; color:InactiveCaptionText;" title="Inactive Caption">A</block>
+		<block style="background:InfoBackground; border-color:InfoBackground; color:InfoText;" title="Info">A</block>
+		<block style="background:Menu; border-color:Menu; color:MenuText" title="Menu">A</block>
+		<block style="background:ThreeDFace; border-color:ThreeDHighlight ThreeDDarkShadow ThreeDDarkShadow ThreeDHighlight; color:ButtonText;" style="2-layered 3D Button"><block style="border-color:ThreeDLightShadow ThreeDShadow ThreeDShadow ThreeDLightShadow;"></block>A</block>
+		<block style="background:Window; border-color:WindowFrame; color:WindowText;" title="Window">A</block>
+	</div>
+</section>
+
+<section style="color-scheme:dark;">
+	<h1>Dark Mode</h1>
+		<h2>Non-Deprecated Colors</h2>
+
+	<div>
+
+		<block style="background:Canvas;" title="Canvas"></block>
+		<block style="background:CanvasText;" title="CanvasText"></block>
+		<block style="background:LinkText;" title="LinkText"></block>
+		<block style="background:VisitedText;" title="VisitedText"></block>
+		<block style="background:ActiveText;" title="ActiveText"></block>
+		<block style="background:ButtonFace;" title="ButtonFace"></block>
+		<block style="background:ButtonText;" title="ButtonText"></block>
+		<block style="background:ButtonBorder;" title="ButtonBorder"></block>
+		<block style="background:Field;" title="Field"></block>
+		<block style="background:FieldText;" title="FieldText"></block>
+		<block style="background:Highlight;" title="Highlight"></block>
+		<block style="background:HighlightText;" title="HighlightText"></block>
+		<block style="background:SelectedItem;" title="SelectedItem"></block>
+		<block style="background:SelectedItemText;" title="SelectedItemText"></block>
+		<block style="background:Mark;" title="Mark"></block>
+		<block style="background:MarkText;" title="MarkText"></block>
+		<block style="background:GrayText;" title="GrayText"></block>
+	</div>
+
+
+		<h2>Non-Deprecated Colors Combos</h2>
+
+	<div>
+		<block style="background:Canvas; border-color:Canvas; color:CanvasText" title="Canvas">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:LinkText" title="Link">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:VisitedText" title="Visited Link">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:ActiveText" title="Active Link">A</block>
+		<block style="background:ButtonFace; border-color:ButtonBorder; color:ButtonText" title="2D Button">A</block>
+		<block style="background:Field; border-color:Field; color:FieldText" title="Textfield">A</block>
+		<block style="background:Highlight; border-color:Highlight; color:HighlightText" title="Highlight">A</block>
+		<block style="background:Highlight; border-color:Highlight; color:GrayText" title="Disabled Highlight">A</block>
+		<block style="background:SelectedItem; border-color:SelectedItem; color:SelectedItemText" title="Selected Item">A</block>
+		<block style="background:Mark; border-color:Mark; color:MarkText" title="Mark">A</block>
+		<block style="background:Canvas; border-color:Canvas; color:GrayText" title="Gray Text">A</block>
+	</div>
+
+
+		<h2>Deprecated Colors</h2>
+
+	<div>
+
+		<block style="background:ActiveBorder" title="ActiveBorder"></block>
+		<block style="background:ActiveCaption" title="ActiveCaption"></block>
+		<block style="background:AppWorkspace" title="AppWorkspace"></block>
+		<block style="background:Background" title="Background"></block>
+		<block style="background:ButtonHighlight" title="ButtonHighlight"></block>
+		<block style="background:ButtonShadow" title="ButtonShadow"></block>
+		<block style="background:CaptionText" title="CaptionText"></block>
+		<block style="background:InactiveBorder" title="InactiveBorder"></block>
+		<block style="background:InactiveCaption" title="InactiveCaption"></block>
+		<block style="background:InactiveCaptionText" title="InactiveCaptionText"></block>
+		<block style="background:InfoBackground" title="InfoBackground"></block>
+		<block style="background:InfoText" title="InfoText"></block>
+		<block style="background:Menu" title="Menu"></block>
+		<block style="background:MenuText" title="MenuText"></block>
+		<block style="background:Scrollbar" title="Scrollbar"></block>
+		<block style="background:ThreeDDarkShadow" title="ThreeDDarkShadow"></block>
+		<block style="background:ThreeDFace" title="ThreeDFace"></block>
+		<block style="background:ThreeDHighlight" title="ThreeDHighlight"></block>
+		<block style="background:ThreeDLightShadow" title="ThreeDLightShadow"></block>
+		<block style="background:ThreeDShadow" title="ThreeDShadow"></block>
+		<block style="background:Window" title="Window"></block>
+		<block style="background:WindowFrame" title="WindowFrame"></block>
+		<block style="background:WindowText" title="WindowText"></block>
+	</div>
+
+
+		<h2>Deprecated Colors Combos</h2>
+
+	<div>
+
+		<block style="background:ActiveCaption; border-color:ActiveBorder; color:CaptionText" title="Caption">A</block>
+		<block style="background:ButtonFace; border-color:ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight; color:ButtonText;" title="1-layered 3D Button">A</block>
+		<block style="background:InactiveCaption; border-color:InactiveCaption; color:InactiveCaptionText;" title="Inactive Caption">A</block>
+		<block style="background:InfoBackground; border-color:InfoBackground; color:InfoText;" title="Info">A</block>
+		<block style="background:Menu; border-color:Menu; color:MenuText" title="Menu">A</block>
+		<block style="background:ThreeDFace; border-color:ThreeDHighlight ThreeDDarkShadow ThreeDDarkShadow ThreeDHighlight; color:ButtonText;" style="2-layered 3D Button"><block style="border-color:ThreeDLightShadow ThreeDShadow ThreeDShadow ThreeDLightShadow;"></block>A</block>
+		<block style="background:Window; border-color:WindowFrame; color:WindowText;" title="Window">A</block>
+	</div>
+</section>
